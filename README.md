@@ -15,11 +15,11 @@ Tons of cool stuff. You can pick libraries like jQuery, jQuery mobile, Bootstrap
 
 Choose a command line tool of your choice and navigate via 'cd' to your desired folder:
 
-`<addr>` cd path/to/my/folder
+`cd path/to/my/folder`
 
 Then just type in:
 
-`<addr>` yo mobile
+`yo mobile` 
 
 This opens a yeoman-dialog in your console. 
 Give your app a name and press 'enter'.
