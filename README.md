@@ -13,11 +13,24 @@ Tons of cool stuff. You can pick libraries like jQuery, jQuery mobile, Bootstrap
 
 ##How to use?
 
-Choose a command line tool of your choice and navigate via 'cd' to your desired folder:
+First of all, do some initial stuff and install following:
 
-`cd path/to/my/folder`
+1. NPM
+2. Grunt
+3. Bower
 
-Then just type in:
+Use Git (you know that, bro? Of course you do! Otherwise, you would not be here. If you dont, read a tutorial ^^) and clone the repository to your folder:
+
+`git clone git@github.com:LisaLisa1987/generator-mobile-web-app.git`
+
+Navigate to that folder with a command line tool:
+
+`cd path/to/my/cloned/directory`
+
+Type in 
+`npm link`
+
+Then, your are almost finished, create a folder wherever you want (to make that clear, on your computer ;-P ), navigate with your command line tool to that folder and type in:
 
 `yo mobile` 
 
