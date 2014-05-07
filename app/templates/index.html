@@ -1,0 +1,67 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%= _.capitalize(webappName) %></title>
+    <link rel="stylesheet" href="app/css/base.css">
+
+    <% if (jQuery) { %>
+        <script src="libs/jquery/dist/jquery.min.js"></script>
+    <% } %>
+
+    <% if (angular) { %>
+        <script src="libs/angular/angular.min.js"></script>
+    <% } %>
+
+    <% if (bootstrap) { %>
+        <script src="libs/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
+        <link rel="stylesheet" href="libs/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.css">
+    <% } %>
+
+    <% if (parallax) { %>
+        <script src="libs/parallax/deploy/jquery.parallax.min.js"></script>
+    <% } %>
+
+    <script src="app/scripts/app.js"></script>
+
+</head>
+
+<body>
+
+    <h1><%= _.capitalize(webappName) %></h1>
+
+    <% if (jQuery) { %>
+        <p>You are using jQueryMobile. Congrats!</p>
+        <script>
+            $('body').append("Hallo, jQuery is working!");
+        </script>
+    <% } %>
+
+    <% if (bootstrap) { %>
+        <p>You are using Bootstrap. Congrats!</p>
+        <button type="button" class="btn btn-danger">Danger</button>
+    <% } %>
+
+    <% if (angular) { %>
+        <p>You are using Angular, awesome!</p>
+    <% } %>
+
+    <% if (parallax) { %>
+        <p>You are using parallax? How handsome!</p>
+
+        <ul id="scene">
+            <li class="layer" data-depth="0.00"></li>
+            <li class="layer" data-depth="0.20"></li>
+            <li class="layer" data-depth="0.40"></li>
+            <li class="layer" data-depth="0.60"></li>
+            <li class="layer" data-depth="0.80"></li>
+            <li class="layer" data-depth="1.00"></li>
+        </ul>
+
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+
+    <% } %>
+
+</body>
+</html>

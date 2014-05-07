@@ -1,0 +1,16 @@
+{
+  "name": "<%= _.slugify( webappName ) %>",
+  "version": "0.0.0",
+  "dependencies": {
+    <% if(jQuery) { %>
+  		"jquery": "*",
+  	<% } if (angular) { %>
+  		"angular": "*",
+  	<% } if (bootstrap) { %>
+  		"bootstrap-sass-official": "*",
+  	<% } if (parallax) { %>
+  		"parallax": "*"
+  	<% } %>
+
+}
+}
